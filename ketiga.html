@@ -15,6 +15,10 @@
 		// 	});
 		// 	// end effect show dan hide
 		// });
+
+
+
+
 		// $(function(){
 		// 	//effect show dan hide dengan atribut kecepatan fast normal dan slow
 		// 	$('button#in').click(function(){
@@ -31,21 +35,39 @@
 		// 	});
 		// 	// end effect show dan hidedengan atribut kecepatan fast normal dan slow
 		// });
+
+
+
+
+		// $(function(){
+		// 	//effect show dan hide dengan atribut fadeIn dan fadeOut
+		// 	$('button#in').click(function(){
+		// 		$('p').fadeIn();
+		// 		$('.satu').fadeIn();
+		// 		$('.dua').fadeIn();
+		// 		$('.tiga').fadeIn();
+		// 	});
+		// 	$('button#out').click(function(){
+		// 		$('p').fadeOut();
+		// 		$('.satu').fadeOut();
+		// 		$('.dua').fadeOut();
+		// 		$('.tiga').fadeOut();
+		// 	});
+		// 	// end effect show dan hidedengan atribut fadeIn dan fadeOut
+		// });
+
+
+
+
 		$(function(){
-			//effect show dan hide dengan atribut fadeIn dan fadeOut
-			$('button#in').click(function(){
-				$('p').fadeIn();
-				$('.satu').fadeIn();
-				$('.dua').fadeIn();
-				$('.tiga').fadeIn();
+			//effect slideUp dan slideDown
+			$('button#sembunyi').click(function(){
+				$('p,.satu,.dua').slideUp();
 			});
-			$('button#out').click(function(){
-				$('p').fadeOut();
-				$('.satu').fadeOut();
-				$('.dua').fadeOut();
-				$('.tiga').fadeOut();
+			$('button#tampil').click(function(){
+				$('p,.satu,.dua').slideDown();
 			});
-			// end effect show dan hidedengan atribut fadeIn dan fadeOut
+			// end effect slideUp dan slideDown
 		});
 	</script>
 </head>
@@ -61,8 +83,10 @@
 		<button id='tampil'>Show</button> -->
 	<!-- end effect show dan hide --> 
 
+
+
 	<!-- effect show dan hide dengan atribut kecepatan fast normal dan slow-->
-		<h1>Effect Hide & Show dengan atribut kecepatan fast normal dan slow</h1>
+		<!-- <h1>Effect Hide & Show dengan atribut kecepatan fast normal dan slow</h1>
 		<hr/>
 		<em class='satu'>Perbaiki diri sampai kau mencintai diri sendiribaru mencintai orang laibn</em>
 		<br/>
@@ -72,7 +96,18 @@
 		<br/>
 		<p>itu aja</p>
 		<button id='in'>Tombol 1</button>
-		<button id='out'>Tombol 2</button>
+		<button id='out'>Tombol 2</button> -->
 	<!-- end effect show dan hide dengan atribut kecepatan fast normal dan slow-->
+
+	<!-- effect slideUp dan slideDown -->
+		 <h1>slideUp dan slideDown </h1>
+		<hr/>
+		<em class='satu'>Perbaiki diri sampai kau mencintai diri sendiribaru mencintai orang laibn</em>
+		<br/>
+		<em class='dua'>Tingkatkan nilai mu sebagai lelaki, buat bicaramu memiliki harga</em>
+		<p>itu aja</p>
+		<button id='sembunyi'>SlideUp</button>
+		<button id='tampil'>SlideDown</button>
+	<!-- end effect slideUp dan slideDown --> 
 </body>
 </html>
