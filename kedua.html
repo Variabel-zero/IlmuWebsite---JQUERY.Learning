@@ -16,6 +16,15 @@
 			$('i').hide();
 			$('#title').hide();
 			$('.utama').hide()
+		});
+		$('.mau').hover(function(){
+			$(this).hide();
+		});
+		$('input').focus(function(){
+			$(this).css('background-color','lightblue');
+		});
+		$('input').blur(function(){
+			$(this).css('background','none');
 		})
 		
 	});
@@ -33,5 +42,16 @@
 	<em class ='utama'>latihan lagi lagi lagi lagi lagi lagi lagi</em>
 	<br/>
 	<button id='o'>Klik Saya double</button>
+	<br/>
+	<p class='mau'>Jika tombol mouse di atas tulisan ini maka kalimat ini akan hilang</p>
+	<hr/>
+	<form action='' method='post'>
+		<label for='nama'>Nama</label>
+			<input type="text" name='nama' id='nama'>
+		<label for='pass'>Alamat</label>
+			<input type="password" name="password" id='pass'>
+		<button type='submit'>Kirim</button>
+	</form>
+
 </body>
 </html>
