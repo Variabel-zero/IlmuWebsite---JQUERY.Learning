@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQUERY</title>
+	<script type="text/javascript" src='jquery-3.5.1.min.js'></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('h3').click(function(){
+				//saudara dari h3 dibweri effect slideDown
+				$(this).siblings('p').slideDown();
+				//orangtua dari h3 yakni div, saudara dari div,anak dari div yaitu p berikan effeck slide up
+				$(this).parent('div').siblings().children('p').slideUp();
+
+			});
+		});
+	</script>
+	<style type="text/css">
+		div{
+			float:left;
+			padding:10px;
+			width:200px;
+			height:auto;
+			margin:0 20px 0 0;
+			background: #eee;
+		}
+		h3{
+			margin:0;
+		}
+		h3:hover{
+			cursor:pointer;
+		}
+		p{
+			display:none;
+			margin:0;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<h3>Satu</h3>
+	<p>
+		Satu dikenal dengan suatu yang istimewa, nomor satu, itu ibaratnya tidak terkalahkan
+	</p>
+</div>
+<div>
+	<h3>Dua</h3>
+	<p>
+		Dua merupakan Angka yang lumrah ditemukan pada anggota tubuh, dua tangan
+	</p>
+</div>
+<div>
+	<h3>Tiga</h3>
+	<p>
+		Ada sebuah desa bernama salatiga, yang dimana penduduknya menyenangi akan dunia web development
+	</p>
+</div>
+<div>
+	<h3>Empat</h3>
+	<p>
+		Empat, dan angka lainnya itu sama-sama bagusnya
+	</p>
+</div>
+</body>
+</html>

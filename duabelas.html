@@ -5,7 +5,7 @@
 	<script type="text/javascript" src='jquery-3.5.1.min.js'></script>
 	<script type="text/javascript">
 		$(function(){
-			$('span').parentsUntil('div').css({'color':'red','border':'2px solid lightblue'});
+			$('div').children().css({'color':'red','border':'2px solid lightblue'});
 		})
 
 	</script>
@@ -21,15 +21,13 @@
 
 </head>
 <body>
-	<div class="ancestors">
-		<div style="width:'500px;'">div (great-grandparent / buyut -> moyang)
+	<div class="ancestors" style="width:'500px;'">div (great-grandparent / buyut -> moyang)
 			<ul>ul (grandparent - kakek)
 				<li>li (direct parent/parent - >orangtua langsung)
 					<span>span</span>
 				</li>
 			</ul>
-		</div>
-
 	</div>
+
 </body>
 </html>
