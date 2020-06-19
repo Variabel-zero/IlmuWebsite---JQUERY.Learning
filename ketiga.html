@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQUERY</title>
+	<script type="text/javascript" src='jquery-3.5.1.min.js'></script>
+	<script>
+		// $(function(){
+		// 	//effect show dan hide
+		// 	$('button#sembunyi').click(function(){
+		// 		$('p,.satu,.dua').hide();
+		// 	});
+		// 	$('button#tampil').click(function(){
+		// 		$('p,.satu,.dua').show();
+		// 	});
+		// 	// end effect show dan hide
+		// });
+		// $(function(){
+		// 	//effect show dan hide dengan atribut kecepatan fast normal dan slow
+		// 	$('button#in').click(function(){
+		// 		$('p').hide(500);
+		// 		$('.satu').hide('slow');
+		// 		$('.dua').hide('normal');
+		// 		$('.tiga').hide('fast');
+		// 	});
+		// 	$('button#out').click(function(){
+		// 		$('p').show(500);
+		// 		$('.satu').show('slow');
+		// 		$('.dua').show('normal');
+		// 		$('.tiga').show('fast');
+		// 	});
+		// 	// end effect show dan hidedengan atribut kecepatan fast normal dan slow
+		// });
+		$(function(){
+			//effect show dan hide dengan atribut fadeIn dan fadeOut
+			$('button#in').click(function(){
+				$('p').fadeIn();
+				$('.satu').fadeIn();
+				$('.dua').fadeIn();
+				$('.tiga').fadeIn();
+			});
+			$('button#out').click(function(){
+				$('p').fadeOut();
+				$('.satu').fadeOut();
+				$('.dua').fadeOut();
+				$('.tiga').fadeOut();
+			});
+			// end effect show dan hidedengan atribut fadeIn dan fadeOut
+		});
+	</script>
+</head>
+<body>
+	<!-- effect show dan hide -->
+		<!--  <h1>Effect Hide & Show </h1>
+		<hr/>
+		<em class='satu'>Perbaiki diri sampai kau mencintai diri sendiribaru mencintai orang laibn</em>
+		<br/>
+		<em class='dua'>Tingkatkan nilai mu sebagai lelaki, buat bicaramu memiliki harga</em>
+		<p>itu aja</p>
+		<button id='sembunyi'>Hide</button>
+		<button id='tampil'>Show</button> -->
+	<!-- end effect show dan hide --> 
+
+	<!-- effect show dan hide dengan atribut kecepatan fast normal dan slow-->
+		<h1>Effect Hide & Show dengan atribut kecepatan fast normal dan slow</h1>
+		<hr/>
+		<em class='satu'>Perbaiki diri sampai kau mencintai diri sendiribaru mencintai orang laibn</em>
+		<br/>
+		<em class='dua'>Tingkatkan nilai mu sebagai lelaki, buat bicaramu memiliki harga</em>
+		<br/>
+		<em class='tiga'>jadilah pria dengan nilai harga diri</em>
+		<br/>
+		<p>itu aja</p>
+		<button id='in'>Tombol 1</button>
+		<button id='out'>Tombol 2</button>
+	<!-- end effect show dan hide dengan atribut kecepatan fast normal dan slow-->
+</body>
+</html>
