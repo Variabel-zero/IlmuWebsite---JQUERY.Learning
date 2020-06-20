@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery</title>
+	<script type="text/javascript" src='jquery-3.5.1.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').click(function(){
+				var namenya = $('input.nama').val();
+				$('input.copy').val(namenya);
+			})
+		});
+	</script>
+	
+</head>
+<body>
+		<label for='nama'>Nama</label><br/>
+		<input type="text" class='nama' id='nama' value='ISINYA SUKA - SUKA GUE LAH,MASALAH?' width='300px'>
+		<br/>
+		
+		<button>Klik</button>
+	<br/>
+		<input type="text" class='copy' value=''>
+</body>
+</html>
+

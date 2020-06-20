@@ -7,9 +7,9 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			//vardigunkakan untuk mendevinisikan suatu variabel data, yangbisa diisi dengan suatu nilai, dalam hal ini isi tetx akan diambil dari div merah
-			var warnahijau = $('div.merah').html();
+			var warnahijau = $('div.merah').text();
 			//text akan mengkopi tetx tanpa membawa format asal, artinya sesuai defaul standar
-			$('div.hijau').text(warnahijau);
+			$('div.hijau').html(warnahijau);
 		})
 	</script>
 	<style type="text/css">
