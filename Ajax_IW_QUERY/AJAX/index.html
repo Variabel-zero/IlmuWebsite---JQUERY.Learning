@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX</title>
+	<script type="text/javascript" src='../jquery-3.5.1.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#ajaxid').submit(function(e){
+				e.preventDefault();
+
+				$.ajax({
+					url:'ajax.php',
+					type : 'POST',
+					dataType:'html',
+					data:$(this).serialize(),
+					beforeSend:function(){
+						$('#waiting').text('mohon tunggu');
+					},
+					success:function(html){
+						$('#waiting').fadeOut('slow');
+						$('#result').text(html).fadeIn('slow').fadeOut('slow').fadeIn('slow');
+
+					}
+
+				})
+
+			})
+			
+		})
+	</script>
+</head>
+<body>
+	<form action="POST" id='ajaxid'>
+		<input type="text" name='ajaxInput'>
+		<button type='submit'>Kirim</button>
+	</form>
+	<div id='waiting'>
+	</div>
+	<div id='result'>
+	</div>
+</body>
+</html>

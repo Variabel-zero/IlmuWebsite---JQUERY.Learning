@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX</title>
+	<script type="text/javascript" src='../jquery-3.5.1.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').click(function(){
+
+
+				$.get('get.php',function(data,status){
+					alert("Data: " + data + "\nStatus: " + status);
+				})
+			})
+		})
+	</script>
+</head>
+<body>
+	<h1>Latihan JQuery Bagian 9</h1>
+	<p>Kita akan mempelajari penggunaan AJAX dalam JQuery</p>
+	<button>Ambil Data Dari Server</button>
+</body>
+</html>
