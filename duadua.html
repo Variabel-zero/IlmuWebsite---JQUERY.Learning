@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery</title>
+	<script type="text/javascript" src='jquery-3.5.1.min.js'></script>
+	<script type="text/javascript">
+	$(function(){
+		$('button').click(function(){
+			var ambilgambar = $('img.gambar1').attr('src');
+			// alert(ambilgambar);
+			$('.gambar2').attr('src',ambilgambar);
+		})
+	})	
+	</script>
+	
+</head>
+<body>
+	<h1>Menggunakan fungsi attr()</h1>
+	<button>ambil gambar</button>
+	<br/>
+	<img src='gambar1.png' class='gambar1' alt='masik belum disisi'></body>
+	<br/>
+	<img src='gambar2.png' class='gambar2' alt='masik belum disisi'></body>
+</body>
+</html>

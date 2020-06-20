@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery</title>
+	<script type="text/javascript" src='jquery-3.5.1.min.js'></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#append').click(function(){
+			$('#tampil').append('<p>'+$('input.inputan').val()+'</p>');
+			$('input.inputan').val('');
+		})
+
+		$('#prepend').click(function(){
+			$('#tampil2').prepend('<p>'+$('input.inputan2').val()+'</p>');
+			$('input.inputan2').val('');
+		})
+
+		$('#after').click(function(){
+			$('#tampil3').after('<i>'+$('input.inputan3').val()+'</i>');
+			$('input.inputan3').val('');
+		})
+
+		$('#before').click(function(){
+			$('#tampil4').before('<i>'+$('input.inputan4').val()+'</i>');
+			$('input.inputan4').val('');
+		})
+	})
+			
+	</script>
+	
+</head>
+<body>
+	<h1>Menggunakan fungsi append</h1>
+	<label>Isikan Apa saja :</label>
+	<input type="text" name="inputan" class="inputan" />
+	<br />
+	<button id='append'>Tambah Elemen</button>
+	<div id='tampil'></div>
+
+
+	<h1>Menggunakan fungsi prepend</h1>
+	<label>Isikan Apa saja :</label>
+	<input type="text" name="inputan" class="inputan2" />
+	<br />
+	<button id='prepend'>Tambah Elemen</button>
+	<div id='tampil2'></div>
+
+	<h1>Menggunakan fungsi after</h1>
+	<label>Isikan Apa saja :</label>
+	<input type="text" name="inputan" class="inputan3" />
+	<br />
+	<button id='after'>Tambah Elemen</button>
+	<div id='tampil3'></div>
+
+
+	<h1>Menggunakan fungsi before</h1>
+	<label>Isikan Apa saja :</label>
+	<input type="text" name="inputan" class="inputan4" />
+	<br />
+	<button id='before'>Tambah Elemen</button>
+	<div id='tampil4'></div>
+</body>
+</html>
