@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery</title>
+	<script type="text/javascript" src='jquery-3.5.1.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//vardigunkakan untuk mendevinisikan suatu variabel data, yangbisa diisi dengan suatu nilai, dalam hal ini isi tetx akan diambil dari div merah
+			var warnahijau = $('div.merah').html();
+			//text akan mengkopi tetx tanpa membawa format asal, artinya sesuai defaul standar
+			$('div.hijau').text(warnahijau);
+		})
+	</script>
+	<style type="text/css">
+		div{
+			float:left;
+			width:200px;
+			height:200px;
+			margin :0 20px 0 0;
+		}
+		.merah{
+			background:red;
+		}
+		.hijau{
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="merah">
+		<h1>judul artikel</h1>
+		<p>pada suatu hari</p>
+	</div>
+	<div class="hijau">
+		
+	</div>
+</body>
+</html>
