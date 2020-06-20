@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQUERY</title>
+	<script type="text/javascript" src='jquery-3.5.1.min.js'></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('#up').click(function(){
+				$('p').addClass('red');
+
+			});
+
+			$('#in').click(function(){
+				$('p').removeClass('red');
+
+			});
+		});
+	</script>
+	<style type="text/css">
+		.red{
+			background:red;
+			color:#fff;
+			height:300px;
+			width:300px;
+			text-align: center;
+			padding:20px;
+			font-size:4em;
+		}
+		p{
+			pading:20px;
+		}
+	</style>
+</head>
+<body>
+	<p>Tampilkan dengan indah</p>
+	<button id='up'>tambah class</button> <button id='in'>hapus class</button>
+</body>
+</html>
